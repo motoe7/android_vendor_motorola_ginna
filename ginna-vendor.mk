@@ -178,6 +178,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ginna/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine \
     vendor/motorola/ginna/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/motorola/ginna/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
+    vendor/motorola/ginna/proprietary/vendor/bin/hw/motorola.hardware.camera.imgtuner@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.camera.imgtuner@1.0-service \
     vendor/motorola/ginna/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/motorola/ginna/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/motorola/ginna/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.0-service \
@@ -190,6 +191,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ginna/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/motorola/ginna/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/motorola/ginna/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
+    vendor/motorola/ginna/proprietary/vendor/bin/mm-qcamera-app:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-app \
     vendor/motorola/ginna/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/motorola/ginna/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/motorola/ginna/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
@@ -213,6 +215,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ginna/proprietary/vendor/etc/acdbdata/na/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Hdmi_cal.acdb \
     vendor/motorola/ginna/proprietary/vendor/etc/acdbdata/na/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Headset_cal.acdb \
     vendor/motorola/ginna/proprietary/vendor/etc/acdbdata/na/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Speaker_cal.acdb \
+    vendor/motorola/ginna/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
+    vendor/motorola/ginna/proprietary/vendor/etc/camera/dual_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dual_golden.bin \
     vendor/motorola/ginna/proprietary/vendor/etc/camera/mot_hi556_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_hi556_chromatix.xml \
     vendor/motorola/ginna/proprietary/vendor/etc/camera/mot_ov02a_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_ov02a_chromatix.xml \
     vendor/motorola/ginna/proprietary/vendor/etc/camera/mot_ov2180_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_ov2180_chromatix.xml \
@@ -385,7 +389,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ginna/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbccQTI.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
+    vendor/motorola/ginna/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
+    vendor/motorola/ginna/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_hi556_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi556_common.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_hi556_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi556_cpp_liveshot.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_hi556_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi556_cpp_preview.so \
@@ -519,53 +524,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_mot_s5k5e9_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_video_full.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_mot_s5k5e9_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_zsl_preview_3a.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_mot_s5k5e9_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_zsl_video_3a.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_common.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_cpp_hfr_120.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_cpp_hfr_60.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_cpp_liveshot.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_cpp_preview.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_cpp_snapshot.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_cpp_snapshot_custom.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_cpp_snapshot_downscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_cpp_snapshot_downscale.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_cpp_video.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_default_video.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_hfr_120.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_hfr_120_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_hfr_120_3a.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_hfr_60.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_hfr_60_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_hfr_60_3a.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_postproc.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_preview.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_snapshot.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_zsl_preview_3a.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_ov12a10_ocean_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_ocean_zsl_video_3a.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_common.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_cpp_hfr_120.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_cpp_liveshot.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_cpp_preview.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_cpp_snapshot.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_cpp_snapshot_custom.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_cpp_video_full.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_hfr_120.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_hfr_120_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_hfr_120_3a.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_postproc.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_snapshot.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_video_full.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_zsl_preview_3a.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_channel_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_channel_zsl_video_3a.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_common.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_cpp_hfr_120.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_cpp_liveshot.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_cpp_preview.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_cpp_snapshot.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_cpp_snapshot_custom.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_cpp_video_full.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_hfr_120.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_hfr_120_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_hfr_120_3a.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_postproc.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_snapshot.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_video_full.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_zsl_preview_3a.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libchromatix_s5k4h7_ocean_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_ocean_zsl_video_3a.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdepthmapwrapper.so \
@@ -578,8 +536,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ginna/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-osal.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
-    vendor/motorola/ginna/proprietary/vendor/lib/libgrallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgrallocutils.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
+    vendor/motorola/ginna/proprietary/vendor/lib/libgui_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgui_vendor.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libhal_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhal_dbg.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
@@ -700,6 +658,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ginna/proprietary/vendor/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpegdma.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libmot_afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_afd.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libmot_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_lux_standardization.so \
+    vendor/motorola/ginna/proprietary/vendor/lib/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotext_inf.so \
+    vendor/motorola/ginna/proprietary/vendor/lib/libmotimager_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotimager_utils.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
     vendor/motorola/ginna/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
@@ -746,9 +706,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ginna/proprietary/vendor/lib/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-diag.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
+    vendor/motorola/ginna/proprietary/vendor/lib/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseemore.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_reg.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
+    vendor/motorola/ginna/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
     vendor/motorola/ginna/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
