@@ -215,7 +215,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ginna/proprietary/vendor/etc/acdbdata/na/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Hdmi_cal.acdb \
     vendor/motorola/ginna/proprietary/vendor/etc/acdbdata/na/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Headset_cal.acdb \
     vendor/motorola/ginna/proprietary/vendor/etc/acdbdata/na/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Speaker_cal.acdb \
-    vendor/motorola/ginna/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
     vendor/motorola/ginna/proprietary/vendor/etc/camera/dual_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dual_golden.bin \
     vendor/motorola/ginna/proprietary/vendor/etc/camera/mot_hi556_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_hi556_chromatix.xml \
     vendor/motorola/ginna/proprietary/vendor/etc/camera/mot_ov02a_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_ov02a_chromatix.xml \
