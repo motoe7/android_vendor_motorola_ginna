@@ -273,6 +273,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ginna/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/motorola/ginna/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/motorola/ginna/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_hlt_hd_621.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_hlt_hd_621.xml \
+    vendor/motorola/ginna/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_hd_620.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_hd_620.xml \
     vendor/motorola/ginna/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_hd_621.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_hd_621.xml \
     vendor/motorola/ginna/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv.bin \
     vendor/motorola/ginna/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_Argentina.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_Argentina.bin \
@@ -293,6 +294,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ginna/proprietary/vendor/firmware/aw8624_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8624_haptic.bin \
     vendor/motorola/ginna/proprietary/vendor/firmware/aw882xx_rcv_reg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_rcv_reg.bin \
     vendor/motorola/ginna/proprietary/vendor/firmware/aw882xx_spk_reg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_spk_reg.bin \
+    vendor/motorola/ginna/proprietary/vendor/firmware/chipone-tianma-ICNL9911C-0288-0000-ginna.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/chipone-tianma-ICNL9911C-0288-0000-ginna.bin \
     vendor/motorola/ginna/proprietary/vendor/firmware/chipone-tianma-ICNL9911S-0125-0000-ginna.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/chipone-tianma-ICNL9911S-0125-0000-ginna.bin \
     vendor/motorola/ginna/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
     vendor/motorola/ginna/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
